@@ -1,8 +1,21 @@
 # processesCoordinator
 
 ## 0 Usage
+To compile use:
 
-## Description
+`make`
+
+To run use:
+
+`./coordinator <NumOfPeers> <NumOfEntries> <NumOfReps> <PercentOfReads>`
+
+  * `<NumOfPeers>` : the number of different peers accessing the shared memory space
+  * `<NumOfEntries>` : the number of entries in memory
+  * `<NumOfReps>` : the number of times each peer will try to access an entry
+  * `<PercentOfReads>` : the percentage of Readers vs Writers (give an integer for ex. '70' is you want 70% to be readers)
+
+
+## 1 Description
 The following program creates and coordinates processes in order to explore the classic readers-writers problem through means of inter process communication.
 
 The main program is a coordinator
